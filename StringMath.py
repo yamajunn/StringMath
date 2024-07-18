@@ -8,7 +8,7 @@ with open("Plus.json") as f:
 with open("Minus.json") as f:
     MINUS_DICT = json.load(f)
 
-def minus(a, b):
+def plus(a, b):
     a, b = str(a), str(b)
     max_int = max(len(a.split(".")[0]), len(b.split(".")[0]))
     a += "." if "." not in a else ""
